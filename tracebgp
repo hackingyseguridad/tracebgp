@@ -1,13 +1,9 @@
 #!/bin/bash
-# Licensed under GPLv3
-# created by "black" on LET
-# please give credit if you plan on using this for your own projects
-# https://github.com/blackdotsh
-# Depends on http://www.team-cymru.org/Services/ip-to-asn.html#whois for ASN -> Whois
+# Traceroute AS 
 
 if [[ -z "$1" ]]
 then
-	echo "IP argurement required. Run the program as: $0 HostHere";
+	echo "IP: $0 Host";
 	exit 1;
 fi
 
