@@ -1,0 +1,8 @@
+#!/bin/bash
+# Muestra los rangos IP de un AS 
+# (c) hackingyseguridad.com 2017
+# Uso: ./bgp2ip AS
+echo Uso: ./bgp2ip AS
+whois -h whois.radb.net -i origin $1 | awk '/^route:/ {print $2;}' | sort | uniq
+whois -h whois.radb.net -i origin $1 | awk '/^route6:/ {print $2;}' | sort | uniq
+
