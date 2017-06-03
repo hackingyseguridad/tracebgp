@@ -1,0 +1,8 @@
+#!/bin/bash
+# AS de IP publica
+echo "Usp: ./ip2bgp <ip>"
+# (c) hackingyseguridad.com 2017
+OIFS=$IFS;
+IFS=$'\n';
+echo
+curl -H $1 http://ip-api.com/line/$1?fields=as,country
