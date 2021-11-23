@@ -1,4 +1,4 @@
-# tracebgp Muestra traza y los AS 
+# tracebgp Muestra los saltos de la ruta y los AS de la traza 
 
 chmod +x tracebgp
 
