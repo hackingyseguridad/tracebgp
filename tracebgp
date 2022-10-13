@@ -1,4 +1,5 @@
 #!/bin/bash
+# hackingyseguridad.com 2022
 # Traceroute AS 
 
 if [[ -z "$1" ]]
