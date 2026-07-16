@@ -148,8 +148,6 @@ La implementación de `traceroute` que trae por defecto la mayoría de distribuc
 | `-V` | Muestra la versión del programa |
 | `--help` | Muestra la ayuda resumida de opciones |
 
-> ⚠️ **Nota sobre `-h`:** en la implementación estándar de `traceroute` en Linux **no existe** una opción `-h` para pedir ayuda (se usa `--help`); en cambio, sí existe una opción `-h` en el `tracert` de Windows y en algunas variantes tipo BSD, donde equivale a fijar el número máximo de saltos (lo mismo que `-m` en Linux). Conviene no confundir ambas convenciones al migrar comandos entre sistemas operativos.
-
 ### `tracebgp` usa `-A`
 
 El script `tracebgp` de este repositorio invoca internamente `traceroute -A "$1"`. La opción `-A` hace que, por cada salto en el que la IP responde, `traceroute` intente automáticamente identificar el **AS de origen** de esa IP y lo muestre entre corchetes junto a la dirección (p. ej. `[AS15169]`). `tracebgp` toma esa información en bruto y la enriquece más todavía, sustituyendo el número de AS por su **nombre/descripción real** obtenido de Team Cymru, de modo que en vez de ver solo `AS15169` veas directamente `AS15169:GOOGLE`.
@@ -252,7 +250,7 @@ Uso: ./bgp2ip AS
 
 ---
 
-## 🗄️ Fuentes de datos (whois)
+### Fuentes de datos (whois)
 
 | Fuente | Usada por | Qué aporta |
 |---|---|---|
@@ -272,7 +270,7 @@ Uso: ./bgp2ip AS
 
 ---
 
-### 📄 Licencia
+### Licencia
 
 Este proyecto se distribuye bajo licencia **GPL-3.0**. Consulta el fichero [`LICENSE`](./LICENSE) para más detalles.
 
