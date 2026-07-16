@@ -9,8 +9,6 @@ En una traza de red normal solo ves IPs. Con **tracebgp** ves, además, **de qu�
 - Investigar la infraestructura de un objetivo en labores de reconocimiento de red.
 - Entender la topología de Internet en cualquier traceroute.
 
-> Proyecto de [hackingyseguridad.com](http://www.hackingyseguridad.com)
-
 ---
 
 ### Tabla de contenidos
